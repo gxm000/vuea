@@ -1,10 +1,5 @@
 <template>
   <div class="wrap">
-    <div class="head">
-      <img class="head_pic" src="./assets/zuo.png" alt="">
-      <span>补换驾照</span>
-      <img class="head_pic" src="./assets/gengduo.png" alt="">
-    </div>
     <div class="section">
       <div class="nav">
         <span>订单提交</span>
@@ -13,38 +8,14 @@
         <span>办理完成</span>
       </div>
       <img class="banner" src="./assets/banner.jpg" alt="">
-      <!-- <div class="count">
-        <ul>
-          <li>
-            <div class="box"><img src="./assets/add.png" alt=""></div>
-            <span>身份证正面</span>
-          </li>
-          <li>
-            <div class="box"><img src="./assets/add.png" alt=""></div>
-            <span>身份证反面</span>
-          </li>
-          <li>
-            <div class="box"><img src="./assets/add.png" alt=""></div>
-            <span>驾驶证正页</span>
-          </li>
-          <li>
-            <div class="box"><img src="./assets/add.png" alt=""></div>
-            <span>驾驶证反页</span>
-          </li>
-          <li>
-            <div class="box"><img src="./assets/add.png" alt=""></div>
-            <span>白底半身照</span>
-          </li>
-        </ul>
-      </div> -->
       <router-view></router-view>
-      <div class="list">
+      <!-- <div class="list">
         <p><span>服务类型</span><span>换驾照<img src="./assets/you.png" alt=""></span></p>
         <p><span>当前驾照签发城市<img src="./assets/wenhao.png" alt=""></span><span class="ccc">请选择签发地</span></p>
         <p><span>可补换的签发城市<img src="./assets/wenhao.png" alt=""></span><span class="ccc">请选择补换地</span></p>
         <p><span>服务费</span><span class="text">￥399</span></p>
       </div>
-      <p class="ppp"><span>服务类型</span><span>换驾照<img src="./assets/you.png" alt=""></span></p>
+      <p class="ppp"><span>服务类型</span><span>换驾照<img src="./assets/you.png" alt=""></span></p> -->
       <img class="fixed" src="./assets/kefu.jpg" alt="">
       <p class="center"><a href="javjscript:;">常见问题？</a></p>
     </div>
@@ -69,6 +40,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size:12px;
 }
 html,body{
   width: 100%;
@@ -80,20 +52,6 @@ html,body{
   height: 100%;
   display: flex;
   flex-direction: column;
-  .head{
-    width: 100%;
-    flex-shrink: 0;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #999;
-    background: #fff;
-    .head_pic{
-      width: 25px;
-      height: 25px;
-    }
-  }
   .section{
     width: 100%;
     flex: 1;
@@ -153,7 +111,7 @@ html,body{
       width: 100%;
       margin-top: 15px;
       background: #fff;
-      p{
+      .p{
         width: 100%;
         height: 40px;
         padding: 0 10px;
